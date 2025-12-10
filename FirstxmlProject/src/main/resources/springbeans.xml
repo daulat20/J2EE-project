@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- <bean class="com.xml.Student" id="std">
+	<property name="rollno" value="1"></property>
+	<property name="name" value="sagar"></property>
+	<property name="age" value="25"></property>
+	</bean>
+	
+	<bean class="com.xml.college" id="clg">
+		<property name="Clgid" value="101"></property>
+		<property name="clgname" value="dyp"></property>
+		<property name="grade" value="A+"></property>
+		<property name="stud" ref="std"></property>
+	
+	</bean> -->
+	
+	<bean class="com.xml.Student" id="std">
+	<constructor-arg index="0" value="1"> </constructor-arg>
+	<constructor-arg index="1" value="daulat"> </constructor-arg>
+	<constructor-arg index="2" value="25"> </constructor-arg>
+	
+	</bean>
+	
+	<bean class="com.xml.college" id="clg">
+	<constructor-arg index="0" value="1"> </constructor-arg>
+	<constructor-arg index="1" value="daulat"> </constructor-arg>
+	<constructor-arg index="2" value="25"> </constructor-arg>
+	<constructor-arg index="3" ref="std"> </constructor-arg>
+	
+	</bean>
+</beans>
